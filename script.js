@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Fungsi untuk mengambil data provinsi
     async function fetchProvinsi() {
         try {
-            const response = await fetch('https://ibukota-api.vercel.app/api/regions');
+            const response = await fetch('https://api.goapi.io/regional/provinsi?api_key=81c5bd06-f012-5961-b902-8d4104cf');
             const data = await response.json();
             populateProvinsi(data);
         } catch (error) {
