@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Fungsi untuk mengambil data kota berdasarkan id provinsi
     async function fetchKota(provinceId) {
         try {
-            const response = await fetch(https://api.goapi.io/regional/kota?api_key=81c5bd06-f012-5961-b902-8d4104cf and provinsi_id ${provinceId}/cities);
+            const response = await fetch provinceId https://api.goapi.io/regional/kota?api_key=81c5bd06-f012-5961-b902-8d4104cf and provinsi_id ${provinceId}/cities);
             const data = await response.json();
             populateKota(data);
         } catch (error) {
